@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+//import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
@@ -16,7 +16,7 @@ LicenseManager.setLicenseKey("Thomas_Horvath_EvaluationLicense_NotForProduction_
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    //HttpClientModule,
     AgGridModule.withComponents([])
   ],
   providers: [],
