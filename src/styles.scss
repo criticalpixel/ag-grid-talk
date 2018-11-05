@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding:0px;
+    background: #f4f4f4;
+}
+
+.gridwrapper {
+    margin-top:10vh;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    height: 80vh;
+}
