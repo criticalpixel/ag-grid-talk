@@ -1,0 +1,5 @@
+<mat-icon *ngFor="let i of ratings" 
+    (click)="rateSpeaker(i)" 
+    [ngClass]="{'rated': currentRate >= i}">
+    star
+</mat-icon>

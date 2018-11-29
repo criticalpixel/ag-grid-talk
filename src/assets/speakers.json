@@ -1,0 +1,380 @@
+[{
+    "id":1,
+    "name":"Harry Roberts",
+    "image":"../assets/Untitled-design-49.png",
+    "title":"Consultant Performance Engineer, Founder @ CSS Wizardry",
+    "github":"https://github.com/csswizardry",
+    "twitter":"https://twitter.com/csswizardry",
+    "talk":"It’s My (Third) Party, and I’ll Cry if I Want To ",
+    "ratings":[10]
+},
+{
+    "id":2,
+    "name":"Remy Sharp",
+    "image":"../assets/Untitled-design-61.png",
+    "title":"Founder @ Left Logic ",
+    "github":"https://github.com/remy",
+    "twitter":"https://twitter.com/rem",
+    "talk":"Using a modern web to recreate 1980S horribly slow and loud loading screens",
+    "ratings":[1,4,1]
+},
+{
+    "id":3,
+    "name":"Asim Hussain",
+    "image":"../assets/23.png",
+    "title":"Developer Advocate @ Microsoft",
+    "github":"https://github.com/jawache",
+    "twitter":"https://twitter.com/jawache",
+    "talk":"AI + JavaScript Rocks",
+    "ratings":[]
+},
+{
+    "id":4,
+    "name":"Benedikt Meurer",
+    "image":"../assets/Untitled-design-51.png",
+    "title":"JavaScript Developer (sort of)",
+    "github":"https://github.com/bmeurer",
+    "twitter":"https://twitter.com/bmeurer",
+    "talk":"JavaScript engines: a tale of types, classes, and maps",
+    "ratings":[]
+},
+{
+    "id":5,
+    "name":"Damian Dulisz",
+    "image":"../assets/Untitled-design-50.png",
+    "title":"Vue.js Core Team member",
+    "github":"https://github.com/shentao",
+    "twitter":"https://twitter.com/DamianDulisz",
+    "talk":"Rewriting for that 1000th Use Case – A Vue Component Story ",
+    "ratings":[]
+},
+{
+    "id":6,
+    "name":"Gianluca Casati",
+    "image":"../assets/20.png",
+    "title":"Full Stack Developer",
+    "github":"https://github.com/fibo/",
+    "twitter":"https://twitter.com/GianlucaCasati",
+    "talk":"Vanilla React/Redux components",
+    "ratings":[]
+},
+{
+    "id":7,
+    "name":"Glenn Reyes",
+    "image":"../assets/21.png",
+    "title":"Frontend Engineer",
+    "github":"https://github.com/glennreyes",
+    "twitter":"https://twitter.com/glnnrys",
+    "talk":"From learning to thinking in GraphQL",
+    "ratings":[]
+},
+{
+    "id":8,
+    "name":"Ignacio Anaya",
+    "image":"../assets/platiz-sq.png",
+    "title":"Full Stack Developer @ BloqInc",
+    "github":"https://github.com/ianaya89",
+    "twitter":"https://twitter.com/ianaya89",
+    "talk":"Decentralizing the internet with JavaScript &  PWA with PWF",
+    "ratings":[]
+},
+{
+    "id":9,
+    "name":"Jakub Janczyk",
+    "image":"../assets/17.png",
+    "title":"Full Stack Developer @ Pragmatists",
+    "github":"https://github.com/jakubjanczyk",
+    "twitter":"https://twitter.com/janczyk_jakub",
+    "talk":"Testing Front-End Applications",
+    "ratings":[]
+},
+{
+    "id":10,
+    "name":"Jan Monschke",
+    "image":"../assets/18.png",
+    "title":"Frontend Engineer @ SoundCloud",
+    "github":"https://github.com/janmonschke",
+    "twitter":"https://twitter.com/thedeftone",
+    "talk":"Garbage collection in modern web applications",
+    "ratings":[]
+},
+{
+    "id":11,
+    "name":"Jepser Bernardino",
+    "image":"../assets/19.png",
+    "title":"Frontend Developer @ Typeform",
+    "github":"https://github.com/jepser",
+    "twitter":"https://twitter.com/jepser",
+    "talk":"The journey of a new interface",
+    "ratings":[]
+},
+{
+    "id":12,
+    "name":"Katerina Skroumpelou",
+    "image":"../assets/14.png",
+    "title":"Angular GDE, Software Engineer @ ThisDot",
+    "github":"https://github.com/mandarini",
+    "twitter":"https://twitter.com/psybercity",
+    "talk":"Exploring the Lighthouse",
+    "ratings":[]
+},
+{
+    "id":13,
+    "name":"Kitze",
+    "image":"../assets/Untitled-design-1.png",
+    "title":"Founder @ React Academy",
+    "github":"https://github.com/kitze",
+    "twitter":"https://twitter.com/thekitze",
+    "talk":"React State Management In a GraphQL Era",
+    "ratings":[]
+},
+{
+    "id":14,
+    "name":"Maciej Myśliński",
+    "image":"../assets/Untitled-design-52.png",
+    "title":"Senior Frontend Developer &amp; Team Leader @ Netguru",
+    "github":"https://github.com",
+    "twitter":"https://twitter.com/maciejmyslinski",
+    "talk":"The missing piece of testing",
+    "ratings":[]
+},
+{
+    "id":15,
+    "name":"Manfred Steyer",
+    "image":"../assets/2.png",
+    "title":"Programming Architect, Trainer and Consultant",
+    "github":"https://github.com/manfredsteyer",
+    "twitter":"https://twitter.com/ManfredSteyer",
+    "talk":"Sustainable Client Architectures with Micro Apps",
+    "ratings":[]
+},
+{
+    "id":16,
+    "name":"Manuel Matuzovic",
+    "image":"../assets/15.png",
+    "title":"Frontend Developer",
+    "github":"https://github.com/matuzo ",
+    "twitter":"https://twitter.com/mmatuzo",
+    "talk":"The Dark Side of the Grid",
+    "ratings":[]
+},
+{
+    "id":17,
+    "name":"Marcin Hagmajer",
+    "image":"../assets/16.png",
+    "title":"Founder @ React Rangers",
+    "github":"https://github.com/mhagmajer",
+    "twitter":"https://twitter.com/mhagmajer",
+    "talk":"Why we’ll all use React Hooks",
+    "ratings":[]
+},
+{
+    "id":18,
+    "name":"Martin Hochel",
+    "image":"../assets/Bez-tytułu-1-e1533653913235.png",
+    "title":"Principal Software Engineer",
+    "github":"https://github.com/Hotell",
+    "twitter":"https://twitter.com/martin_hotell",
+    "talk":"Use Angular for better React apps",
+    "ratings":[]
+},
+{
+    "id":19,
+    "name":"Martin Splitt",
+    "image":"../assets/Untitled-design-46.png",
+    "title":"Developer Advocate @ Google",
+    "github":"https://github.com/avgp",
+    "twitter":"https://twitter.com/g33konaut",
+    "talk":"Demystifying discoverable web apps ",
+    "ratings":[]
+},
+{
+    "id":20,
+    "name":"Nader Dabit",
+    "image":"../assets/11.png",
+    "title":"Developer Advocate @ Amazon Web Services ",
+    "github":"https://github.com/dabit3",
+    "twitter":"https://twitter.com/dabit3",
+    "talk":"Building Serverless Web Applications with AWS",
+    "ratings":[]
+},
+{
+    "id":21,
+    "name":"Natalia Tepluhina",
+    "image":"../assets/12.png",
+    "title":"Senior Frontend Engineer @ GitLab / CTO @ VueVixens<br>",
+    "github":"https://github.com/NataliaTepluhina",
+    "twitter":"https://twitter.com/N_Tepluhina",
+    "talk":"Making Vue app reactive with RxJS",
+    "ratings":[]
+},
+{
+    "id":22,
+    "name":"Netta Bondy",
+    "image":"../assets/Untitled-design-47.png",
+    "title":"Senior JavaScript Developer, Co-founder @ Baot",
+    "github":"https://github.com/NettaB/",
+    "twitter":"https://twitter.com/_bondit_",
+    "talk":"React Fiber vs. Angular Ivy ",
+    "ratings":[]
+},
+{
+    "id":23,
+    "name":"Nicolas Goutay",
+    "image":"../assets/13.png",
+    "title":"Web Performance Evangelist @ Theodo",
+    "github":"https://github.com/phacks",
+    "twitter":"https://twitter.com/phacks",
+    "talk":"Getting your Team Passionate About Web Performance to Achieve Performant Web Apps",
+    "ratings":[]
+},
+{
+    "id":24,
+    "name":"Rodolfo Dias",
+    "image":"../assets/8.png",
+    "title":"Frontend Engineer @ Outfittery",
+    "github":"https://github.com/rmdias",
+    "twitter":"https://twitter.com/r_mdias",
+    "talk":"Sweet Web Animations API",
+    "ratings":[]
+},
+{
+    "id":25,
+    "name":"Rowdy Rabouw",
+    "image":"../assets/9.png",
+    "title":"Web and App Developer",
+    "github":"https://github.com/rowdyrabouw",
+    "twitter":"https://twitter.com/rowdyrabouw",
+    "talk":"Browser APIs: the unknown Super Heroes",
+    "ratings":[]
+},
+{
+    "id":26,
+    "name":"Sergei Kriger",
+    "image":"../assets/4.png",
+    "title":"Frontend Developer @ SinnerSchrader",
+    "github":"https://github.com/krigersergei/",
+    "twitter":"https://twitter.com/_sergeikriger",
+    "talk":"Accessible Charts Done Right",
+    "ratings":[]
+},
+{
+    "id":27,
+    "name":"Sergiy Babich",
+    "image":"../assets/Untitled-design-5.png",
+    "title":"Lead Frontend Developer, Founder @ GlobalCSS",
+    "github":"https://github.com/",
+    "twitter":"https://twitter.com/babichss",
+    "talk":"PWA underhood: what makes it so progressive",
+    "ratings":[]
+},
+{
+    "id":28,
+    "name":"Shmuela Jacobs",
+    "image":"../assets/shmuela-jacobs.png",
+    "title":"Frontend Developer and Consultant",
+    "github":"https://github.com/shmool",
+    "twitter":"https://twitter.com/ShmuelaJ",
+    "talk":"Extreme reactive forms in Angular ",
+    "ratings":[]
+},
+{
+    "id":29,
+    "name":"Srushtika Neelakantam",
+    "image":"../assets/Untitled-design-1-1.png",
+    "title":"Developer Advocate @ Ably Realtime",
+    "github":"https://github.com/Srushtika",
+    "twitter":"https://twitter.com/Srushtika",
+    "talk":"Standardisation, interoperability and <del>coping with</del> leveraging the exponential rise in streaming data",
+    "ratings":[]
+},
+{
+    "id":30,
+    "name":"Stefan Judis",
+    "image":"../assets/stock-photo-227882431-1-e1533654623424.jpg",
+    "title":"Developer Evangelist @ Contentful",
+    "github":"https://github.com/stefanjudis",
+    "twitter":"https://twitter.com/stefanjudis",
+    "talk":"What the v…DOM?",
+    "ratings":[]
+},
+{
+    "id":31,
+    "name":"Thomas Horvath",
+    "image":"../assets/24.png",
+    "title":"Lead Frontend Engineer",
+    "github":"https://github.com/criticalpixel",
+    "twitter":"https://twitter.com/CriticalPix",
+    "talk":"Prototyping Data UI FAST with Ag-Grid &amp; Angular",
+    "ratings":[]
+},
+{
+    "id":32,
+    "name":"Trishul Goel",
+    "image":"../assets/5.png",
+    "title":"Tech Speaker @ Mozilla",
+    "github":"https://github.com/tsl143",
+    "twitter":"https://twitter.com/trishulgoel",
+    "talk":"Cross browser extensions – lets make one",
+    "ratings":[]
+},
+{
+    "id":33,
+    "name":"Uri Shaked",
+    "image":"../assets/Untitled-design-48.png",
+    "title":"Google Developer Expert",
+    "github":"https://github.com/urish",
+    "twitter":"https://twitter.com/UriShaked",
+    "talk":"React Fiber vs. Angular Ivy ",
+    "ratings":[]
+},
+{
+    "id":34,
+    "name":"Vitalii Bobrov",
+    "image":"../assets/3.png",
+    "title":"Frontend Engineer",
+    "github":"https://github.com/vitaliy-bobrov",
+    "twitter":"https://twitter.com/bobrov1989",
+    "talk":"Make the Web Brighter with the CSS Paint API",
+    "ratings":[]
+},
+{
+    "id":35,
+    "name":"Vladimir Novick",
+    "image":"../assets/Untitled-design-39.png",
+    "title":"Google Developer Expert &amp; Independent Consultant",
+    "github":"https://github.com/vnovick",
+    "twitter":"https://twitter.com/vladimirnovick",
+    "talk":"Building AR apps with React Native",
+    "ratings":[]
+},
+{
+    "id":36,
+    "name":"Willian Martins",
+    "image":"../assets/1.png",
+    "title":"CSS Tweaker and JS Formatter @ eBay",
+    "github":"https://github.com/wmsbill",
+    "twitter":"https://twitter.com/wmsbill",
+    "talk":"Back to the future of JS: the next features and amazing proposals",
+    "ratings":[]
+},
+{
+    "id":37,
+    "name":"Chris Trześniewski",
+    "image":"../assets/Untitled-design-55.png",
+    "title":"Frontend Developer @ Scalac",
+    "github":"https://github.com/ktrz",
+    "twitter":"https://twitter.com/ktrz__",
+    "talk":"Upgrade with confidence – dealing with issues while upgrading libraries",
+    "ratings":[]
+},
+{
+    "id":38,
+    "name":"Rafał Bagrowski",
+    "image":"../assets/Untitled-design-54.png",
+    "title":"Frontend Developer @ JLL ",
+    "github":"https://github.com/rakunn",
+    "twitter":"https://twitter.com/BagrowskiRafa",
+    "talk":"Visualizing Data Confidently. Integrating React and Tableau Public.Rafał Bagrowski",
+    "ratings":[]
+}]

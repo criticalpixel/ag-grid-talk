@@ -1,4 +1,58 @@
-<div class="gridwrapper">
+<mat-toolbar color="primary" class="speakertoolbar">
+  <mat-toolbar-row>
+    <img class="logo" src="../assets/front-end-dark-07.png">
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon">favorite</mat-icon>
+    <mat-icon class="example-icon">delete</mat-icon>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">
+          <mat-icon>search</mat-icon>
+        </span>
+      </div>
+      <input type="text" #name (input)="filterSpeakers(name.value)" class="form-control searchbar" placeholder="Search Speaker" aria-label="Search" aria-describedby="basic-addon1">
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<div class="container-fluid toolbaroffset">
+  <div class="container cardwrap p-0">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 speakers">
+        <div class="speaker-card" *ngFor="let speaker of filteredSpeakers | async">
+        <mat-card class="inner-card">
+          <div class="avg-rating" *ngIf="speaker.ratings | avgCount">
+            <span>AVG {{speaker.ratings | avgCount}}</span>
+          </div>
+          <div class="total-rating" *ngIf="speaker.ratings | ratingCount">
+              <span>Votes : {{speaker.ratings | ratingCount}}</span>
+            </div>
+          <mat-card-header>
+            <img mat-card-avatar src="{{speaker.image}}">
+            <mat-card-title>{{speaker.name}}</mat-card-title>
+            <mat-card-subtitle>{{speaker.title}}</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+             {{speaker.talk}}
+            </p>
+          </mat-card-content>
+          <div class="rating">
+          <star-rating [speakerid]="speaker.id" (rate)="rateSpeaker($event)"></star-rating>
+          </div>
+        </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="gridwrapper">
 
   <ag-grid-angular 
       style="width: 100%; height: 100%;" 
@@ -7,4 +61,4 @@
       [rowData]="rowData | async">
   </ag-grid-angular>
 
-</div>
+</div> -->
