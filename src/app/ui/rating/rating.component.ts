@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'star-rating',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./rating.component.scss']
 })
 
-export class RatingComponent implements OnInit {
+export class RatingComponent implements OnInit, OnChanges {
   @Input('speakerid') speakerid;
   @Output('rate') rate = new EventEmitter();
   public ratings:any;
@@ -16,7 +16,11 @@ export class RatingComponent implements OnInit {
   }
 
   ngOnInit(){
-    
+    console.log('init', this.speakerid)
+  }
+
+  ngOnChanges(changes){
+    console.log(changes)
   }
 
   rateSpeaker(rating){

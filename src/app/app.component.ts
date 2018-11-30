@@ -2,8 +2,10 @@ import { Component, OnInit, Pipe } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { GridOptions } from 'ag-grid-community';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { filter, flatMap, tap } from 'rxjs/operators';
+import { filter, flatMap, tap, take, skip } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs/internal/Observable';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -31,15 +33,25 @@ export class AppComponent implements OnInit {
 
 
   getSpeakers(){
-    this.speakers = this.http.get('../assets/speakers.json');
-    console.log(this.speakers)
-    this.filteredSpeakers = this.speakers;
+    this.db.collection('speakers').valueChanges().pipe(take(1)).subscribe((speakers:any)=>{
+      console.log('get', speakers);
+      this.speakers =  speakers
+      this.filteredSpeakers = this.speakers;
+    });
+
+    this.db.collection('speakers').stateChanges(['modified']).subscribe((speakers:any)=>{
+      console.log('modified', speakers)
+      speakers.map(speaker=>{
+        let newSpeakerData = speaker.payload.doc.data()
+        let speakerIndex = this.speakers.findIndex(s=>s.id == newSpeakerData.id);
+        this.speakers[speakerIndex].ratings = newSpeakerData.ratings;
+      })
+    });
   }
 
   filterSpeakers(name:any){
-    this.filteredSpeakers = this.speakers.pipe(
-      map((item:any)=> item.filter((item:any)=> item.name.toLowerCase().indexOf(name.toLowerCase()) > -1))
-    )
+    this.filteredSpeakers = this.speakers.filter((item:any)=> item.name.toLowerCase().indexOf(name.toLowerCase()) > -1)
+    
   }
   // //Fetch Data via | HTTP
   // getData(){
@@ -81,13 +93,30 @@ export class AppComponent implements OnInit {
   // }
 
   rateSpeaker(data){
-    //send speaker data up.
-    console.log(data);
-    // this.speakers.pipe(
-    //   map((speakers:any)=> speakers.filter((speaker:any)=> speaker.id == data.id)),
-    //   map((speaker:any)=>{console.log(speaker);speaker.ratings.push(data.rating)})
-    // )
-    // this.filterSpeakers = this.speakers;
+    //add rating (offline)
+    // console.log(this.speakers[this.speakers.findIndex(s=>s.id == data.id)].ratings)
+    let idRef=this.speakers.findIndex(s=>s.id == data.id);
+    this.speakers[idRef].ratings = [...this.speakers[idRef].ratings,data.rating];
+    
+    //send speaker data up (online)
+    let speaker:any = this.db.doc(`speakers/speaker_${data.id}`).ref
+     this.db.firestore.runTransaction(t => {
+      return t.get(speaker)
+        .then(doc => {
+          // Add one person to the city population
+          console.log(doc.data().ratings)
+          let newRatings = doc.data().ratings
+          newRatings.push(data.rating)
+          t.update(speaker, {ratings: newRatings});
+        });
+    }).then(result => {
+      console.log('Transaction success!');
+    }).catch(err => {
+      //remove offline rating on fail
+      this.speakers[this.speakers.findIndex(s=>s.id == data.id)].ratings.pop()
+      console.log('Transaction failure:', err);
+    });
+
   }
 
 }

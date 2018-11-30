@@ -1,0 +1,3 @@
+<div class="speaker-card" *ngFor="let speaker of speakers">
+    <speaker-card [speaker]="speaker" (rate)="rateSpeaker($event)"></speaker-card>
+</div>

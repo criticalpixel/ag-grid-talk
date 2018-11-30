@@ -1,0 +1,9 @@
+.speaker-card {
+    width: 33%;
+}
+
+@media (max-width:440px){
+    .speaker-card {
+      width: 100%
+    }
+}

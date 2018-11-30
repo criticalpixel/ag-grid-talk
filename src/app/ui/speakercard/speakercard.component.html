@@ -1,0 +1,22 @@
+<mat-card class="inner-card">
+    <div class="avg-rating" *ngIf="speaker.ratings | avgCount">
+      <span>AVG {{speaker.ratings | avgCount}}</span>
+    </div>
+    <div class="total-rating" *ngIf="speaker.ratings | ratingCount">
+        <span>Votes : {{speaker.ratings | ratingCount}}</span>
+      </div>
+    <mat-card-header>
+      <img mat-card-avatar src="{{speaker.image}}">
+      <mat-card-title>{{speaker.name}}</mat-card-title>
+      <mat-card-subtitle>{{speaker.title}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+       {{speaker.talk}}
+      </p>
+    </mat-card-content>
+    <div class="rating">
+    <star-rating [speakerid]="speaker.id" (rate)="rateSpeaker($event)"></star-rating>
+    </div>
+  </mat-card>

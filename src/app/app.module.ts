@@ -16,6 +16,8 @@ import {MatCardModule } from '@angular/material/card';
 import {LicenseManager} from 'ag-grid-enterprise/main';
 import "ag-grid-enterprise";
 import { RatingComponent } from './ui/rating/rating.component';
+import { SpeakerCardComponent } from './ui/speakercard/speakercard.component';
+import { SpeakerListComponent } from './ui/speakerlist/speakerlist.component';
 LicenseManager.setLicenseKey("Thomas_Horvath_EvaluationLicense_NotForProduction_999Devs14_February_2019__MTU1MDEwMjQwMDAwMA==d258abeb3508844e8f42bcddf2919d1f");
 
 @NgModule({
@@ -23,7 +25,9 @@ LicenseManager.setLicenseKey("Thomas_Horvath_EvaluationLicense_NotForProduction_
     AppComponent,
     RatingCountPipe,
     AvgCountPipe,
-    RatingComponent
+    RatingComponent,
+    SpeakerListComponent,
+    SpeakerCardComponent
   ],
   imports: [
     BrowserModule,
