@@ -1,0 +1,52 @@
+.speakertoolbar {
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.logo {
+    width: 145px;
+}
+
+.toolbaroffset {
+    position: relative;
+    top: 140px;
+}
+
+.example-icon {
+    margin-right: 10px;
+}
+
+.example-icon:last-of-type {
+    margin-right:0px;
+}
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  .input-group-text {
+      background: #fff;
+      border:none;
+      padding: 5px 5px 5px 15px;
+  }
+
+  .searchbar {
+      background: #fff;
+      border:none;
+      font-weight:500;
+  }
+
+  @media (max-width:440px){
+      .toolbaroffset {
+         top: 127px;
+      }
+      .inner-card {
+        margin-bottom:15px;
+        margin-left:0px;
+     }
+  }
