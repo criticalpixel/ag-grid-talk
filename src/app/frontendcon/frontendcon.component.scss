@@ -7,6 +7,15 @@
 }
 
 
+.speakers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cardwrap {
+  //   margin-bottom: 15px;
+}
+
 .logo {
     width: 145px;
 }

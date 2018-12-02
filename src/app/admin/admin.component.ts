@@ -26,11 +26,10 @@ export class AdminComponent implements OnInit {
   //Set Column Definitions
   setColumnDefs(){
     this.columnDefs = [
-      { field: "id", 
-        enableRowGroup:true},
       { field: "name"},
       { field: "title" },
-      { field: "talk" },
+      { field: "twitter" },
+      { field: "github" },
       { field: "ratingAverage", 
         headerName:"Average Rating",
         cellClass: "number",
@@ -38,9 +37,7 @@ export class AdminComponent implements OnInit {
       { field: "ratingCount", 
         headerName:"Total Ratins",
         cellClass: "number",
-        cellRenderer: "agAnimateShowChangeCellRenderer" },
-      { field: "twitter" },
-      { field: "github" }
+        cellRenderer: "agAnimateShowChangeCellRenderer" }
     ];
 
   }
