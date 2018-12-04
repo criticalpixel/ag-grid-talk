@@ -51,6 +51,7 @@ export class AdminComponent implements OnInit {
       enableFilter:true,
       floatingFilter:true,
       rowSelection:'multiple',
+      enableColResize:true,
       rowMultiSelectWithClick:true,
       showToolPanel:true,
       rowGroupPanelShow:'always',
