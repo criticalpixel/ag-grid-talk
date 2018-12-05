@@ -17,7 +17,6 @@ export class AdminService {
       gridOPtions.api.setRowData(this.dataCollection);
       console.log(this.dataCollection)
     });
-
   }
 
   onDataChanges(gridOptions:GridOptions){
