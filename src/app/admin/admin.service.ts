@@ -12,7 +12,6 @@ export class AdminService {
 
   getSpeakers(gridOPtions:GridOptions){
     this.db.collection('speakers').valueChanges().pipe(take(1)).subscribe((speakers:any)=>{
-      console.log('get', speakers);
       this.convertRatings(speakers);
       this.dataCollection =  speakers;
       gridOPtions.api.setRowData(this.dataCollection);
@@ -23,7 +22,6 @@ export class AdminService {
 
   onDataChanges(gridOptions:GridOptions){
     this.db.collection('speakers').stateChanges(['modified']).subscribe((speakers:any)=>{
-      console.log('modified', speakers)
       speakers.map(speaker=>{
         let updatedEntry = speaker.payload.doc.data()
         let speakerIndex = this.dataCollection.findIndex(s=>s.id == updatedEntry.id);
