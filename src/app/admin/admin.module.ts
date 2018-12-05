@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
 import {LicenseManager} from 'ag-grid-enterprise/main';
 import "ag-grid-enterprise";
-LicenseManager.setLicenseKey("Thomas_Horvath_EvaluationLicense_NotForProduction_999Devs14_February_2019__MTU1MDEwMjQwMDAwMA==d258abeb3508844e8f42bcddf2919d1f");
+//licence key goes here
 //Others
 import { AdminComponent } from './admin.component';
 import { AdminService } from './admin.service';
