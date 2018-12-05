@@ -10,7 +10,6 @@ export class AdminService {
 
   }
 
-  //Get Speaker's Data
   getSpeakers(gridOPtions:GridOptions){
     this.db.collection('speakers').valueChanges().pipe(take(1)).subscribe((speakers:any)=>{
       console.log('get', speakers);
@@ -22,35 +21,22 @@ export class AdminService {
 
   }
 
-
-
-
   onDataChanges(gridOptions:GridOptions){
     this.db.collection('speakers').stateChanges(['modified']).subscribe((speakers:any)=>{
       console.log('modified', speakers)
       speakers.map(speaker=>{
         let updatedEntry = speaker.payload.doc.data()
         let speakerIndex = this.dataCollection.findIndex(s=>s.id == updatedEntry.id);
-        
-        //keeping track 
-        //this.dataCollection[speakerIndex].ratings = updatedEntry.ratings;
+        let newItem:any = this.copyObject(this.dataCollection[speakerIndex]);
 
-        let newItem:any = this.copyObject(this.dataCollection[speakerIndex])
         newItem.ratings = updatedEntry.ratings;
         newItem.ratingAverage = this.averageRating(newItem.ratings);
         newItem.ratingCount = this.ratingCount(newItem.ratings);
-        console.log(this.dataCollection[speakerIndex]);
-        console.log(newItem);
         gridOptions.api.updateRowData({update: [newItem] })
       })
     });
   }
 
-  //Get Analitic Data
-
-
-
-  //Convert Ratings
   convertRatings(data){
     return data.map(data=>{
       data.ratingAverage = this.averageRating(data.ratings);
@@ -67,7 +53,6 @@ export class AdminService {
     return (value.length == 0)? 0: value.length;
   }
 
-  //Copy Object Helper
   copyObject(object) {
     var newObject = {};
     Object.keys(object).forEach(function(key) {

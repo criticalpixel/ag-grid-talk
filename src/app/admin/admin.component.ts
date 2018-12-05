@@ -27,19 +27,29 @@ export class AdminComponent implements OnInit {
   //Set Column Definitions
   setColumnDefs(){
     this.columnDefs = [
-      { field: "name"},
-      { field: "title" },
-      { field: "image",
+      { 
+        field: "name"
+      },
+      { 
+        field: "title" 
+      },
+      { 
+        field: "image",
         cellRenderer:'imageCellRenderer',
-        width:100},
-      { field: "ratingAverage", 
+        width:100
+      },
+      { 
+        field: "ratingAverage", 
         headerName:"Average Rating",
         cellClass: "number",
-        cellRenderer: "agAnimateShowChangeCellRenderer" },
-      { field: "ratingCount", 
+        cellRenderer: "agAnimateShowChangeCellRenderer" 
+      },
+      { 
+        field: "ratingCount", 
         headerName:"Total Ratins",
         cellClass: "number",
-        cellRenderer: "agAnimateShowChangeCellRenderer" }
+        cellRenderer: "agAnimateShowChangeCellRenderer" 
+      }
     ];
 
   }
@@ -58,6 +68,7 @@ export class AdminComponent implements OnInit {
       showToolPanel:false,
       animateRows:true,
       enableRangeSelection:true,
+      //COOL NEW THINGS BELOW
       frameworkComponents:{
         imageCellRenderer: ImageCell,
       },
