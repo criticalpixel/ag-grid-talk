@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { GridOptions } from 'ag-grid-community';
 import { AdminService } from './admin.service';
+import { ImageCell } from '../ui/datagrid/imagecell.component';
 
 @Component({
   selector: 'admin-panel',
@@ -28,8 +29,9 @@ export class AdminComponent implements OnInit {
     this.columnDefs = [
       { field: "name"},
       { field: "title" },
-      { field: "twitter" },
-      { field: "github" },
+      { field: "image",
+        cellRenderer:'imageCellRenderer',
+        width:100},
       { field: "ratingAverage", 
         headerName:"Average Rating",
         cellClass: "number",
@@ -53,10 +55,12 @@ export class AdminComponent implements OnInit {
       rowSelection:'multiple',
       enableColResize:true,
       rowMultiSelectWithClick:true,
-      showToolPanel:true,
-      rowGroupPanelShow:'always',
+      showToolPanel:false,
       animateRows:true,
       enableRangeSelection:true,
+      frameworkComponents:{
+        imageCellRenderer: ImageCell,
+      },
       getRowNodeId: (data) =>{
         return data.id;
       },

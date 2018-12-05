@@ -13,6 +13,7 @@ import { AdminService } from './admin.service';
 import { adminRouting } from './admin.routing';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { ImageCell } from '../ui/datagrid/imagecell.component';
 
 @NgModule({
 	imports: [
@@ -22,10 +23,11 @@ import { MatIconModule } from '@angular/material/icon';
 		adminRouting,
 		MatToolbarModule,
 		MatIconModule,
-		AgGridModule.withComponents([])
+		AgGridModule.withComponents([ImageCell])
 	],
 	declarations: [ 
-		AdminComponent
+		AdminComponent,
+		ImageCell
 	],
 	providers: [
         AdminService
